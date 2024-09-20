@@ -25,10 +25,11 @@ function Dashboard() {
     <div className="dashboard">
       <NavBar />
       <div className="widgets">
-        <Widget title="Total Users" value="450" />
+        <Widget title="Total Orders" value="450" />
+        <Widget title="Total customers" value="955" />
         <Widget title="Total Revenue" value="$50K" />
-        <Widget title="Orders" value="955" />
-        <Widget title="Deliveries" value="250" />
+        <Widget title="Total Menu" value="250" />
+        <Widget title="Total workers" value="30" />
       </div>
       <div className="charts">
         <LineChart width={600} height={300} data={data}>
