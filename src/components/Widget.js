@@ -1,12 +1,18 @@
+// src/components/Widget.js
 import React from "react";
+import { Paper, Typography } from "@mui/material";
 
-function Widget({ title, value }) {
+const Widget = ({ title, value }) => {
   return (
-    <div className="widget">
-      <h3>{title}</h3>
-      <p>{value}</p>
-    </div>
+    <Paper style={{ padding: 20, textAlign: "center" }}>
+      <Typography variant="h6" gutterBottom>
+        {title}
+      </Typography>
+      <Typography variant="h4" gutterBottom>
+        {value}
+      </Typography>
+    </Paper>
   );
-}
+};
 
 export default Widget;
