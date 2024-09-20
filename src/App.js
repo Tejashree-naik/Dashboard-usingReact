@@ -4,6 +4,7 @@ import { Grid, Typography, Paper } from "@mui/material";
 import Sidebar from "./components/Sidebar";
 import CustomPieChart from "./components/PieChart";
 import CustomBarChart from "./components/BarChart";
+import CustomLineChart from "./components/LineChart"; // Import LineChart
 import Widget from "./components/Widget"; // Import Widget
 
 function App() {
@@ -53,6 +54,16 @@ function App() {
                 Revenue Over Time
               </Typography>
               <CustomBarChart />
+            </Paper>
+          </Grid>
+
+          {/* LineChart Section */}
+          <Grid item xs={12}>
+            <Paper style={{ padding: 20 }}>
+              <Typography variant="h6" gutterBottom>
+                Revenue Trend Line
+              </Typography>
+              <CustomLineChart />
             </Paper>
           </Grid>
         </Grid>
